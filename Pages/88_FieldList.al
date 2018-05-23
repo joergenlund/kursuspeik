@@ -1,8 +1,8 @@
 page 123456788 "Field List2"
 {
+    Caption = 'Field List 2';
     PageType = List;
     SourceTable = Field;
-    Caption = 'Field List 2';
     UsageCategory = Administration;
 
     layout

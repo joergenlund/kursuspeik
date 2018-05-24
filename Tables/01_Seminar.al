@@ -61,6 +61,7 @@ table 123456701 Seminar
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = exist("Seminar Comment Line" where("Table Name"=filter("Seminar"),"No."=Field("No.")));
+            
         }
         field(100; "Seminar Price"; Decimal)
         {

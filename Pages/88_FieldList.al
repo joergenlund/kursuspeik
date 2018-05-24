@@ -1,8 +1,8 @@
-page 123456788 "Field List2"
+page 123456788 "Field List 2"
 {
     Caption = 'Field List 2';
     PageType = List;
-    SourceTable = Field;
+    SourceTable = AllObjWithCaption;
     UsageCategory = Administration;
 
     layout
@@ -11,15 +11,15 @@ page 123456788 "Field List2"
         {
             repeater(Group)
             {
-                field("No.";"No.")
+                field("Object ID";"Object ID")
                 {
                     
                 }
-                field(FieldName;FieldName)
+                field("Object Name";"Object Name")
                 {
 
                 }
-                field(Type;Type)
+                field("Object Type";"Object Type")
                 {
 
                 }

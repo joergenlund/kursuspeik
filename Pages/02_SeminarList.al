@@ -60,7 +60,15 @@ page 123456702 "Seminar List"
                     Image = Comment;
                     Promoted = true;
                     PromotedIsBig = true;
-                    PromotedOnly = true;
+                    //PromotedOnly = true;
+                }
+                 action("Field List")
+                {
+                    RunObject=page "Field List 2";
+                    Image=Filed;
+                    Promoted=true;
+                    PromotedIsBig=true;
+                    //PromotedOnly=true;
                 }
             }
         }

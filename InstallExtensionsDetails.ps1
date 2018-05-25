@@ -6,8 +6,7 @@ Set-ExecutionPolicy RemoteSigned
 Import-Module 'C:\Program Files\Microsoft Dynamics NAV\110\Service\NavAdminTool.ps1' 
 Import-Module 'C:\Program Files (x86)\Microsoft Dynamics NAV\110\RoleTailored Client\Microsoft.Dynamics.Nav.Apps.Management.psd1'
 Get-Command *NAV*
-c:
-cd \temp
+Set-Location c:\temp
 Publish-NAVApp -ServerInstance $ServerInstance -Path $PathName -SkipVerification
 install-NAVApp -ServerInstance $ServerInstance -Name $AppName –Version $Version 
 Sync-NAVTenant -ServerInstance $ServerInstance -Force

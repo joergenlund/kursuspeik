@@ -4,7 +4,6 @@ codeunit 123456799 InstallSeminar
 
     trigger OnInstallAppPerCompany();
     begin
-      SetupExists := SeminarSetup.get;
       if SetupExists then
             exit;
         InitSetup;
@@ -16,6 +15,7 @@ codeunit 123456799 InstallSeminar
     var
         NoSerie: Record "No. Series";
         NoSerieLine: Record "No. Series Line";
+        SeminarSetup: Record "Seminar Setup";
         SourceCodeSetup: Record "Source Code Setup";
         SourceCode: Record "Source Code";
     begin
@@ -62,12 +62,12 @@ codeunit 123456799 InstallSeminar
 
         SeminarSetup.Modify;
 
-/*         SourceCode.Code := 'SEMINAR';
+        SourceCode.Code := 'SEMINAR';
         if SourceCode.Insert then;
         SourceCodeSetup.get;
         SourceCodeSetup.CSD_Seminar := 'SEMINAR';
         SourceCodeSetup.modify;
- */     end;
+     end;
     local procedure CreateSeminar();
     var
         Seminar: Record Seminar;
@@ -101,5 +101,4 @@ codeunit 123456799 InstallSeminar
 
     var
         SetupExists: Boolean;
-        SeminarSetup: Record "Seminar Setup";
 }

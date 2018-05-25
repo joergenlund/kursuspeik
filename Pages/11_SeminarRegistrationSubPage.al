@@ -21,6 +21,7 @@ page 123456711 "Seminar Registration Subpage"
                 }
                 field("Participant Contact No."; "Participant Contact No.")
                 {
+                    ToolTip='Her tastes en tumbe der vil med';
                 }
                 field("Participant Name"; "Participant Name")
                 {

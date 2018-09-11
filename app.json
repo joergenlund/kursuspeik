@@ -1,10 +1,11 @@
 {
-  "id": "29a55ebc-6f1d-49b4-a41d-e1965f952d61",
-  "name": "Seminar Module",
-  "publisher": "Peik Bech-Andersen",
-  "brief": "",
-  "description": "",
+  "id": "c70b57b1-0cce-4f6d-92fb-9243b340c243",
+  "name": "SDSeminar",
+  "publisher": "JSL-Commsoft",
+  "brief": "This is a good Job",
+  "description": "Test",
   "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
   "privacyStatement": "",
   "EULA": "",
   "help": "",
@@ -15,11 +16,12 @@
   "screenshots": [],
   "platform": "11.0.0.0",
   "application": "11.0.0.0",
-  "target": "Internal",
   "showMyCode": true,
   "features": "TranslationFile",
+  "target": "Internal",
   "idRange": {
     "from": 123456700,
     "to": 123456799
   }
-}
+}   
+
